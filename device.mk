@@ -361,3 +361,5 @@ $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
+# Speed profile services and wifi-service to reduce RAM and storage.
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
